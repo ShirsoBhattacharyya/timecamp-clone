@@ -1,9 +1,9 @@
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const FacebookStrategy=require('passport-facebook').Strategy;
-const GOOGLE_CLIENT_ID='344503366982-cq6qtrhasonhpnb0j4n9nn1u67jlqso1.apps.googleusercontent.com';
-const GOOGLE_CLIENT_SECRET='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';
-const FACEBOOK_APP_ID='480133660704030';
-const FACEBOOK_APP_SECRET='55feccab253499033da0e4a61056aaa3';
+const GOOGLE_CLIENT_ID=`${process.env.GOOGLE_CLIENT_ID}`;
+const GOOGLE_CLIENT_SECRET=`${process.env.GOOGLE_CLIENT_SECRET}`;
+const FACEBOOK_APP_ID=`${process.env.FACEBOOK_APP_ID}`;
+const FACEBOOK_APP_SECRET=`${process.env.FACEBOOK_APP_SECRET}`;
 const passport=require('passport');
 
 passport.use(new GoogleStrategy({

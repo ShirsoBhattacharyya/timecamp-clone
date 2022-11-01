@@ -1,17 +1,12 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const userAuthRoute = new mongoose.Schema({
-  email: { type: String, required: true },
-  password: { type: String, required: true },
-  name: { type: String },
-  data: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "userProject",
-    },
-  ],
-});
+const userSchema = new mongoose.Schema({
+    email: { type: String, required: true, unique: true},
+    password: { type: String, required: true},
+    phone: {type: Number },
+    tags : { type : Array , "default" : [] },
+    clients : { type : Array , "default" : [] },
+})
 
-const userAuth = mongoose.model("userauth", userAuthRoute);
-
-module.exports = userAuth;
+const users = mongoose.model("user", userSchema);
+module.exports = users;

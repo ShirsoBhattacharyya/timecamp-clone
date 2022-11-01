@@ -3,7 +3,7 @@ import React from 'react';
 
 import { AiTwotoneDelete } from 'react-icons/ai';
 import { useDispatch } from "react-redux/es/exports";
-import { deleteTask, getTask } from '../store/task/action';
+import { deleteTask, getTask } from '../Store/task/action';
 
 const ProjectTodo = ({setInputBox,taskItem,projectId}) => {
     

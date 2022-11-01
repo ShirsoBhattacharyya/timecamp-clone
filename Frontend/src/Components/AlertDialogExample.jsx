@@ -12,7 +12,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useEffect } from 'react';
 import { useDispatch,useSelector } from "react-redux/es/exports";
-import { deleteProject, getProject } from '../store/project/action';
+import { deleteProject, getProject } from '../Store/project/action';
 import { ProjectTodo } from "./ProjectTodo"
 
 

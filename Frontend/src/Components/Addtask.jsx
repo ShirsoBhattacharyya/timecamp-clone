@@ -7,7 +7,7 @@ import { AiFillSetting } from 'react-icons/ai';
 import { FiEdit } from 'react-icons/fi';
 // import { RiDeleteBinLine } from 'react-icons/ri';
 import { useDispatch } from "react-redux/es/exports";
-import { createTask, getTask } from '../store/task/action';
+import { createTask, getTask } from '../Store/task/action';
 
 const Addtask = ({setInputBox,projectId}) => {
     const [project, setProject] = useState({});

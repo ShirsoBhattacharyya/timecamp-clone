@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 import { useDispatch,useSelector } from "react-redux/es/exports";
 import { ProjectTodo } from "./ProjectTodo"
 import { AlertDialogExample } from './AlertDialogExample';
-import { getTask } from '../store/task/action';
+import { getTask } from '../Store/task/action';
 
 const ProjectContainer = ({setInputBox,projectData,setProjectId}) => {
   

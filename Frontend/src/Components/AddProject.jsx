@@ -7,7 +7,7 @@ import { FaUserCircle } from 'react-icons/fa'
 import { FiEdit } from 'react-icons/fi';
 import { RiDeleteBinLine } from 'react-icons/ri';
 import { useDispatch,useSelector } from "react-redux/es/exports";
-import { getProject, updateProject } from '../store/project/action';
+import { getProject, updateProject } from '../Store/project/action';
 
 
 const AddProject = ({setInputBox,projectId}) => {

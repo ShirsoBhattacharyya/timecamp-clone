@@ -9,8 +9,8 @@ import ProjectContainer from '../../../Components/ProjectContainer';
 import AddProject from '../../../Components/AddProject';
 import Addtask from '../../../Components/Addtask';
 import { useEffect } from 'react';
-import { getProject } from '../../../store/project/action';
-import { createProject } from '../../../store/project/action';
+import { getProject } from '../../../Store/project/action';
+import { createProject } from '../../../Store/project/action';
 
 const Project = () => {
     const [newProject, setNewProject] = useState("")
